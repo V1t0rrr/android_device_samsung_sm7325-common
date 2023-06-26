@@ -886,6 +886,13 @@
             <instance>default</instance>
         </interface>
     </hal>
+   <hal format="aidl"> 
+        <name>vendor.qti.hardware.wifi.supplicant</name> 
+        <interface>
+            <name>ISupplicantVendor</name> 
+            <instance>default</instance> 
+        </interface>
+    </hal>
     <hal format="hidl" optional="true">
         <name>vendor.qti.hardware.wifi.wifimyftm</name>
         <version>1.0</version>

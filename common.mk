@@ -101,6 +101,15 @@ PRODUCT_COPY_FILES += \
     frameworks/av/services/audiopolicy/config/default_volume_tables.xml:$(TARGET_COPY_OUT_VENDOR)/etc/default_volume_tables.xml \
     frameworks/av/services/audiopolicy/config/r_submix_audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/r_submix_audio_policy_configuration.xml
 
+#PRODUCT_VENDOR_PROPERTIES += \
+#   vendor.audio.feature.multi_voice_session.enable=false \
+#   vendor.audio.feature.compr_voip.enable=true \
+#   vendor.audio.feature.deepbuffer_as_primary.enable=true \
+#   vendor.voice.path.for.pcm.voip=false \
+#   vendor.audio.adm.buffering.ms=3 \
+#   vendor.audio_hal.period_multiplier=4 \
+#   vendor.audio.feature.concurrent_capture.enable=false
+
 # Bluetooth
 PRODUCT_PACKAGES += \
     vendor.qti.hardware.bluetooth_audio@2.0.vendor \
@@ -162,7 +171,15 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.display.mapper@3.0.vendor \
     vendor.qti.hardware.display.mapper@4.0.vendor \
     vendor.display.config@2.0.vendor \
-    AdvancedDisplay
+    #AdvancedDisplay
+
+#PRODUCT_VENDOR_PROPERTIES += \
+#    vendor.display.enable_early_wakeup=0 \
+#    vendor.display.disable_hw_recovery_dump=1
+
+#PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
+#    debug.sf.high_fps_late_sf_phase_offset_ns=-4000000 \
+#    debug.sf.high_fps_early_gl_phase_offset_ns=-4000000
 
 # Doze
 PRODUCT_PACKAGES += \
@@ -179,8 +196,8 @@ PRODUCT_PACKAGES += \
     fastbootd
 
 # FastCharge
-PRODUCT_PACKAGES += \
-    vendor.lineage.fastcharge@1.0-service.samsung
+#PRODUCT_PACKAGES += \
+    #vendor.lineage.fastcharge@1.0-service.samsung
 
 # Fingerprint
 PRODUCT_PACKAGES += \
