@@ -434,7 +434,7 @@
         <fqname>@2.0::ISunlightEnhancement/default</fqname>
     </hal>
     <hal format="hidl">
-        <name>vendor.lineage.touch</name>
+        <name>vendor.aospa.touch</name>
         <transport>hwbinder</transport>
         <version>1.0</version>
         <interface>

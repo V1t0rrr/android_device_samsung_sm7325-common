@@ -18,11 +18,11 @@
 
 #include <hidl/MQDescriptor.h>
 #include <hidl/Status.h>
-#include <vendor/lineage/touch/1.0/ITouchscreenGesture.h>
+#include <vendor/aospa/touch/1.0/ITouchscreenGesture.h>
 #include "samsung_touch.h"
 
 namespace vendor {
-namespace lineage {
+namespace aospa {
 namespace touch {
 namespace V1_0 {
 namespace samsung {
@@ -39,9 +39,9 @@ class TouchscreenGesture : public ITouchscreenGesture {
   public:
     bool isSupported();
 
-    // Methods from ::vendor::lineage::touch::V1_0::ITouchscreenGesture follow.
+    // Methods from ::vendor::aospa::touch::V1_0::ITouchscreenGesture follow.
     Return<void> getSupportedGestures(getSupportedGestures_cb resultCb) override;
-    Return<bool> setGestureEnabled(const ::vendor::lineage::touch::V1_0::Gesture& gesture,
+    Return<bool> setGestureEnabled(const ::vendor::aospa::touch::V1_0::Gesture& gesture,
                                    bool enabled) override;
 
   private:
@@ -58,5 +58,5 @@ class TouchscreenGesture : public ITouchscreenGesture {
 }  // namespace samsung
 }  // namespace V1_0
 }  // namespace touch
-}  // namespace lineage
+}  // namespace aospa
 }  // namespace vendor

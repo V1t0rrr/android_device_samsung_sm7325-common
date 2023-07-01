@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-#define LOG_TAG "vendor.lineage.touch@1.0-service.samsung_sm7325"
+#define LOG_TAG "vendor.aospa.touch@1.0-service.samsung_sm7325"
 
 #include <android-base/logging.h>
 #include <binder/ProcessState.h>
@@ -29,8 +29,8 @@ using android::sp;
 using android::status_t;
 using android::OK;
 
-using ::vendor::lineage::touch::V1_0::samsung::GloveMode;
-using ::vendor::lineage::touch::V1_0::samsung::TouchscreenGesture;
+using ::vendor::aospa::touch::V1_0::samsung::GloveMode;
+using ::vendor::aospa::touch::V1_0::samsung::TouchscreenGesture;
 
 int main() {
     sp<GloveMode> gloveMode;

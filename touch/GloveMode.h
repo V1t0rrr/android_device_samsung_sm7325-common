@@ -18,11 +18,11 @@
 
 #include <hidl/MQDescriptor.h>
 #include <hidl/Status.h>
-#include <vendor/lineage/touch/1.0/IGloveMode.h>
+#include <vendor/aospa/touch/1.0/IGloveMode.h>
 #include "samsung_touch.h"
 
 namespace vendor {
-namespace lineage {
+namespace aospa {
 namespace touch {
 namespace V1_0 {
 namespace samsung {
@@ -41,7 +41,7 @@ class GloveMode : public IGloveMode {
 
     bool isSupported();
 
-    // Methods from ::vendor::lineage::touch::V1_0::IGloveMode follow.
+    // Methods from ::vendor::aospa::touch::V1_0::IGloveMode follow.
     Return<bool> isEnabled() override;
     Return<bool> setEnabled(bool enabled) override;
 
@@ -51,5 +51,5 @@ class GloveMode : public IGloveMode {
 }  // namespace samsung
 }  // namespace V1_0
 }  // namespace touch
-}  // namespace lineage
+}  // namespace aospa
 }  // namespace vendor

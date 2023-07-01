@@ -19,7 +19,7 @@
 #include "GloveMode.h"
 
 namespace vendor {
-namespace lineage {
+namespace aospa {
 namespace touch {
 namespace V1_0 {
 namespace samsung {
@@ -36,7 +36,7 @@ bool GloveMode::isSupported() {
     return false;
 }
 
-// Methods from ::vendor::lineage::touch::V1_0::IGloveMode follow.
+// Methods from ::vendor::aospa::touch::V1_0::IGloveMode follow.
 Return<bool> GloveMode::isEnabled() {
     std::ifstream file(TSP_CMD_RESULT_NODE);
     if (file.is_open()) {
@@ -57,5 +57,5 @@ Return<bool> GloveMode::setEnabled(bool enabled) {
 }  // namespace samsung
 }  // namespace V1_0
 }  // namespace touch
-}  // namespace lineage
+}  // namespace aospa
 }  // namespace vendor

@@ -13,8 +13,8 @@
 // limitations under the License.
 
 cc_binary {
-    name: "vendor.lineage.touch@1.0-service.samsung_sm7325",
-    init_rc: ["vendor.lineage.touch@1.0-service.samsung_sm7325.rc"],
+    name: "vendor.aospa.touch@1.0-service.samsung_sm7325",
+    init_rc: ["vendor.aospa.touch@1.0-service.samsung_sm7325.rc"],
     defaults: ["hidl_defaults"],
     relative_install_path: "hw",
     // FIXME: this should be 'vendor: true' for modules that will eventually be
@@ -31,6 +31,6 @@ cc_binary {
         "libbinder",
         "libhidlbase",
         "libutils",
-        "vendor.lineage.touch@1.0",
+        "vendor.aospa.touch@1.0",
     ],
 }

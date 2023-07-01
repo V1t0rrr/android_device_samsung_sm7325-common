@@ -19,7 +19,7 @@
 #include "TouchscreenGesture.h"
 
 namespace vendor {
-namespace lineage {
+namespace aospa {
 namespace touch {
 namespace V1_0 {
 namespace samsung {
@@ -37,7 +37,7 @@ bool TouchscreenGesture::isSupported() {
     return file.good();
 }
 
-// Methods from ::vendor::lineage::touch::V1_0::ITouchscreenGesture follow.
+// Methods from ::vendor::aospa::touch::V1_0::ITouchscreenGesture follow.
 Return<void> TouchscreenGesture::getSupportedGestures(getSupportedGestures_cb resultCb) {
     std::vector<Gesture> gestures;
 
@@ -50,7 +50,7 @@ Return<void> TouchscreenGesture::getSupportedGestures(getSupportedGestures_cb re
 }
 
 Return<bool> TouchscreenGesture::setGestureEnabled(
-    const ::vendor::lineage::touch::V1_0::Gesture&, bool enabled) {
+    const ::vendor::aospa::touch::V1_0::Gesture&, bool enabled) {
     std::fstream file(kTspPath);
 
     file << "singletap_enable," << (enabled ? "1" : "0");
@@ -63,5 +63,5 @@ Return<bool> TouchscreenGesture::setGestureEnabled(
 }  // namespace samsung
 }  // namespace V1_0
 }  // namespace touch
-}  // namespace lineage
+}  // namespace aospa
 }  // namespace vendor

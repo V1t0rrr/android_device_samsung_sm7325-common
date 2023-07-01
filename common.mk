@@ -179,8 +179,8 @@ PRODUCT_PACKAGES += \
     fastbootd
 
 # FastCharge
-PRODUCT_PACKAGES += \
-    vendor.lineage.fastcharge@1.0-service.samsung
+#PRODUCT_PACKAGES += \
+#    vendor.lineage.fastcharge@1.0-service.samsung
 
 # Fingerprint
 PRODUCT_PACKAGES += \
@@ -223,10 +223,6 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     android.hardware.keymaster@4.0-service.samsung \
     libkeymaster4_1support.vendor
-
-# LiveDisplay
-PRODUCT_PACKAGES += \
-    vendor.lineage.livedisplay@2.0-service.samsung-qcom.sm7325
 
 # Media
 PRODUCT_COPY_FILES += \
@@ -380,11 +376,7 @@ PRODUCT_PACKAGES += \
 
 # Touch features
 PRODUCT_PACKAGES += \
-    vendor.lineage.touch@1.0-service.samsung_sm7325
-
-# Trust HAL
-PRODUCT_PACKAGES += \
-    vendor.lineage.trust@1.0-service
+    vendor.aospa.touch@1.0-service.samsung_sm7325
 
 # Vendor service manager
 PRODUCT_PACKAGES += \
