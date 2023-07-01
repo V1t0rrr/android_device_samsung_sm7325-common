@@ -181,6 +181,19 @@
         <name>com.qualcomm.qti.uceservice</name>
         <transport>hwbinder</transport>
     </hal>
+    <hal format="hidl">
+        <name>vendor.aospa.touch</name>
+        <transport>hwbinder</transport>
+        <version>1.0</version>
+        <interface>
+            <name>IGloveMode</name>
+            <instance>default</instance>
+        </interface>
+        <interface>
+            <name>ITouchscreenGesture</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
     <hal format="hidl" override="true">
         <name>vendor.qti.data.factory</name>
         <transport>hwbinder</transport>
@@ -412,25 +425,6 @@
         <fqname>@2.0::ISehChannel/epdgd2</fqname>
         <fqname>@2.0::ISehChannel/imsd</fqname>
         <fqname>@2.0::ISehChannel/imsd2</fqname>
-    </hal>
-    <hal format="hidl">
-        <name>android.hardware.graphics.allocator</name>
-        <transport>hwbinder</transport>
-        <fqname>@2.0::IAllocator/default</fqname>
-        <fqname>@3.0::IAllocator/default</fqname>
-        <fqname>@4.0::IAllocator/default</fqname>
-    </hal>
-    <hal format="hidl">
-        <name>android.hardware.graphics.composer</name>
-        <transport>hwbinder</transport>
-        <fqname>@2.4::IComposer/default</fqname>
-    </hal>
-    <hal format="hidl">
-        <name>android.hardware.graphics.mapper</name>
-        <transport>hwbinder</transport>
-        <fqname>@2.1::IMapper/default</fqname>
-        <fqname>@3.0::IMapper/default</fqname>
-        <fqname>@4.0::IMapper/default</fqname>
     </hal>
     <kernel target-level="5"/>
 </manifest>

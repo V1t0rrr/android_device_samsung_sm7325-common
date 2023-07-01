@@ -397,7 +397,7 @@ PRODUCT_PACKAGES += \
 
 # Touch features
 PRODUCT_PACKAGES += \
-    vendor.lineage.touch@1.0-service.samsung_sm7325
+    vendor.aospa.touch@1.0-service.samsung_sm7325
 
 # Trust HAL
 PRODUCT_PACKAGES += \
