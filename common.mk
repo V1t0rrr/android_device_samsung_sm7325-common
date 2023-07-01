@@ -376,6 +376,7 @@ PRODUCT_PACKAGES += \
 
 # Touch features
 PRODUCT_PACKAGES += \
+    vendor.aospa.touch@1.0 \
     vendor.aospa.touch@1.0-service.samsung_sm7325
 
 # Vendor service manager
